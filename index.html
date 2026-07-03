@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Overpass+Mono:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <title>Natureza</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <img src="img/logo.png" alt="" class="logo">
+
+            <nav class="nav-links">
+                <a href="" class="nav-links_a">Início</a>
+                <a href="" class="nav-links_a">Sobre</a>
+                <a href="" class="nav-links_a">Contato</a>
+            </nav>
+        </div>
+        <h1 class="titulo-principal">Natureza</h1>
+    </header>
+
+    <main class="main">
+        <section class="cards">
+            <article class="card">
+                <div class="card-media" style="background-image: url('img/images.jpg')"></div>
+                <div class="card-content">
+                    <h3>Pau-Brasil</h3>
+                    <p>Ícone nacional, madeira nobre e importante para a história do Brasil.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-media" style="background-image: url('img/ipe-amarelo.jpg')"></div>
+                <div class="card-content">
+                    <h3>Ipê-amarelo</h3>
+                    <p>Conhecido por suas flores vibrantes que colorem as paisagens no inverno.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-media" style="background-image: url('img/jequitiba.jpg')"></div>
+                <div class="card-content">
+                    <h3>Jequitibá</h3>
+                    <p>Árvore gigante e de longa vida, comum em florestas brasileiras.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-media" style="background-image: url('img/sibipiruna.jpg')"></div>
+                <div class="card-content">
+                    <h3>Sibipiruna</h3>
+                    <p>Árvore urbana apreciada por suas flores amarelas e sombra densa.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-media" style="background-image: url('img/painera.jpg')"></div>
+                <div class="card-content">
+                    <h3>Paineira</h3>
+                    <p>Tronco reto e flores grandes; também chamada de ceiba.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-media" style="background-image: url('img/aroeira.jpg')"></div>
+                <div class="card-content">
+                    <h3>Aroeira</h3>
+                    <p>Resistente e comum em áreas de restinga e cerrado.</p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <h2 class="titulo-sidebar">Principais Notícias</h2>
+
+            <div class="noticia-conteudo">
+                <img src="img/noticia1.jpg" alt="" class="noticia-imagem">
+                <h3 class="noticia-titulo">Oceanos do mundo registram recorde de calor para junho</h3>
+            </div>
+
+            <div class="noticia-conteudo">
+                <img src="img/noticia2.jpeg" alt="" class="noticia-imagem">
+                <h3 class="noticia-titulo">Desmatamento na Amazônia aumenta em 2023</h3>
+            </div>
+
+            <div class="noticia-conteudo">
+                <img src="img/noticia3.webp" alt="" class="noticia-imagem">
+                <h3 class="noticia-titulo">Estudos revelam impacto da mudança climática nas espécies nativas</h3>
+            </div>
+        </aside>
+    </main>
+
+    <section class="fale-conosco">
+        <h2 class="titulo-form">Fale Conosco</h2>
+
+        <form action="" class="formulario">
+            <!-- Nome -->
+            <div class="container-inputs">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Nome completo" class="input-formulario" required>
+            </div>
+
+            <!-- CPF -->
+            <div class="container-inputs">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" placeholder="000.000.000-00" class="input-formulario" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" required>
+            </div>
+
+            <!-- Data de nascimento -->
+            <div class="container-inputs">
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" name="data-nascimento" class="input-formulario input-data" min="1906-01-01" max="2026-07-02" required>
+            </div>
+
+            <!-- E-mail -->
+            <div class="container-inputs">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="seuemail@exemplo.com" class="input-formulario" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+            </div>
+
+            <!-- Telefone -->
+            <div class="container-inputs">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" placeholder="(XX) 9XXXX-XXXX" class="input-formulario" pattern="^[0-9]{2}[9]?[0-9]{8}$" required>
+            </div>
+
+            <!-- Assunto -->
+            <div class="container-inputs">
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" class="input-formulario">
+                    <option value="valor1">Assunto Um</option>
+                    <option value="valor2" selected>Assunto Dois</option>
+                    <option value="valor3">Assunto Três</option>
+                </select>
+            </div>
+
+            <!-- Mensagem -->
+            <div class="container-inputs">
+                <label for="mensagem">Digite sua mensagem:</label>
+                <textarea name="mensagem" placeholder="Mensagem" class="input-formulario"></textarea>
+            </div>
+
+            <!-- Aceite de termos -->
+            <label>
+                <input class="input-termos" type="checkbox" name="termos" required>
+                Aceito os termos e condições
+            </label>
+
+            <!-- Botão de envio -->
+            <button type="submit" class="botao-enviar">Enviar</button>
+        </form>
+    
+
+    <footer class="rodape">
+        <section class="conteudo-rodape">
+            <img src="img/logo.png" alt="" class="logo-rodape">
+        
+            <div class="texto-rodape">
+                <div class="text-div-rodape">
+                    <h3>Sobre nós</h3>
+                    <p>Somos uma empresa dedicada<br>à preservação da natureza e à promoção<br>da sustentabilidade.</p>
+                </div>
+
+                <div class="text-div-rodape">
+                    <h3>Contato</h3>
+                    <p class="paragrafo-rodape">Telefone: (11) 1234-5678</p>
+                    <p class="paragrafo-rodape">E-mail: contato@natureza.com</p>
+                </div>
+
+                <div class="text-div-rodape text-div-rodape-redes">
+                    <h3>Redes Sociais</h3>
+                    <div>
+                        <a href="https://www.facebook.com" class="redes_a"><img src="img/facebook.png" alt="Facebook" class="redes_icon"></a>
+                        <a href="https://web.whatsapp.com" class="redes_a"><img src="img/002-whatsapp.png" alt="WhatsApp" class="redes_icon"></a>
+                        <a href="https://www.instagram.com" class="redes_a"><img src="img/001-instagram.png" alt="Instagram" class="redes_icon"></a>
+                        <a href="https://www.youtube.com" class="redes_a"><img src="img/003-youtube.png" alt="YouTube" class="redes_icon"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p class="copy-rodape">© 2024 Natureza. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
