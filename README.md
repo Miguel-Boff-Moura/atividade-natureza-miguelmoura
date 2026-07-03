@@ -1,4 +1,4 @@
-# 🌿 Natureza
+# Natureza
 
 Este projeto consiste em uma página web desenvolvida em HTML e CSS com o tema **Natureza**. O objetivo é apresentar informações sobre árvores brasileiras, notícias relacionadas ao meio ambiente e um formulário de contato.
 
@@ -40,4 +40,4 @@ Este projeto consiste em uma página web desenvolvida em HTML e CSS com o tema *
 
 ## Autor
 
-Trabalho desenvolvido para fins acadêmicos.
+Miguel de Moura - Escola Técnica Estadual Monteiro Lobato - Curso Técnico em Informática
