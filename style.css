@@ -115,20 +115,12 @@ body{
     margin: 0;
 }
 
-@media (max-width: 900px){
-    .cards{ grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 600px){
-    .cards{ grid-template-columns: 1fr; margin: 20px; }
-}
-
 /* Estilização sidebar */
 
 .sidebar{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 450px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.06);
     border-radius: 8px;
     padding: 20px;
@@ -173,7 +165,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 600px;
+    width: 50%;
     margin: 40px auto;
 }
 
@@ -234,7 +226,7 @@ body{
     color: white;
 }
 
-.conteudo-rodape{
+.texto-rodape{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,11 +234,6 @@ body{
 
     margin: 0 auto;
     width: 65%;
-}
-
-.texto-rodape{
-    display: flex;
-    gap: 20px;
 }
 
 .logo-rodape{
@@ -272,4 +259,43 @@ body{
 .copy-rodape{
     text-align: center;
     margin-top: 3em;
+}
+
+@media (max-width: 1200px){
+    .main{
+        width: 90%;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .cards{
+        grid-template-columns: 1fr; margin: 20px;
+    }
+    .conteudo-rodape{
+        width: 90%;
+    }
+    .formulario{
+        width: 60%;
+    }
+}
+
+@media (max-width: 570px){
+    .main{
+        width: 97%;
+    }
+    .sidebar{
+        display: none;
+    }
+    .texto-rodape{
+        text-align: center;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .formulario{
+        width: 95%;
+    }
 }
