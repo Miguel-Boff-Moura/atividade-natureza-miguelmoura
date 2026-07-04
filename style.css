@@ -43,6 +43,81 @@ body{
     color: #5ea700;
 }
 
+#check {
+  display: none;
+}
+
+/* Menu hambúrguer */
+
+.nav-menu{
+    display: none;
+}
+
+/* Estiliza o botão do menu */
+.icone-hamburguer {
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icone-hamburguer span {
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Oculta a lista de links por padrão */
+.lista-menu {
+  display: none;
+  list-style: none;
+  text-decoration: none;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 100%;
+  background-color: #f4f4f4;
+  height: 100vh;
+  width: 30%;
+  border-radius: 15px;
+}
+
+.lista-menu li a{
+    text-decoration: none;
+    color: #2a5820;
+}
+
+.lista-menu li a{
+    display: block;
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+
+/* Animação do botão para transformar em "X" */
+#check:checked ~ .icone-hamburguer span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 5px);
+}
+
+#check:checked ~ .icone-hamburguer span:nth-child(2) {
+    display: none;
+    opacity: 0;
+}
+
+#check:checked ~ .icone-hamburguer span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -5px);
+}
+
+/* Exibe a lista quando o checkbox está marcado */
+#check:checked ~ .lista-menu {
+    display: flex;
+    padding: 20px;
+}
+
 .titulo-principal{
     text-align: center;
     font-size: 80px;
@@ -280,11 +355,22 @@ body{
     .formulario{
         width: 60%;
     }
+    .nav-links{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+    }
 }
 
 @media (max-width: 570px){
+    .cards{
+        width: 100%;
+        margin: 0;
+        padding: 0 0;
+    }
     .main{
-        width: 97%;
+        width: 90%;
     }
     .sidebar{
         display: none;
@@ -297,5 +383,11 @@ body{
 
     .formulario{
         width: 95%;
+    }
+    .titulo-principal{
+        font-size: 60px;
+    }
+    .container{
+        margin: 0 20px;
     }
 }
